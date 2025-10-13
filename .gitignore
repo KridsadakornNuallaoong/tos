@@ -1,0 +1,7 @@
+/target
+
+*.lock
+*.env
+k8s
+log
+env
