@@ -2,7 +2,8 @@
 
 - What's TOS service?? 
 --
-**TOS: Tiny Orca Service** we make it for us collect raw data for research, we need performance and we have limit memory can use.
+**TOS: Tiny Orca Service** <<- It just a name ha ha.
+| we make it for collect raw data in medium-high speed and we need performance and we have limit memory can use.
 
 ## ENV
 ### 
