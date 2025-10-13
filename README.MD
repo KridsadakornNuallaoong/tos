@@ -6,7 +6,8 @@
 - we make it for collect raw data in medium-high speed and we need performance and we have limit memory can use.
 
 ## RULE
-- Path subscribe: sensors/+
+- Path subscribe: sensors/+ <-- this topic will collect your data into collection on mongodb.
+// ! and topic at + should match with your key "type" in json
 - Require this key in json : 
    - deviceID -> string : not specific template now
    - type -> string
