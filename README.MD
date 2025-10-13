@@ -5,6 +5,13 @@
 **TOS: Tiny Orca Service** <<- It just a name ha ha.
 | we make it for collect raw data in medium-high speed and we need performance and we have limit memory can use.
 
+## RULE
+- require this key in json : 
+   - deviceID -> string : not specific template now
+   - type -> string
+   - data -> as object
+   // and we can add location at this
+
 ## ENV
 ### 
 
