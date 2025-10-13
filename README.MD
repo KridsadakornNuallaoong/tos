@@ -7,7 +7,7 @@
 
 ## RULE
 - Path subscribe: sensors/+ <-- this topic will collect your data into collection on mongodb.
-// ! and topic at + should match with your key "type" in json
+- topic at + should match with your key "type" in json
 - Require this key in json : 
    - deviceID -> string : not specific template now
    - type -> string
