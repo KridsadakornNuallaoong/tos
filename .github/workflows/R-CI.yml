@@ -19,9 +19,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Github tag version
-        run: |
-          VAR_TAG=$(git describe --tags --abbrev=0)
-          echo "Verion: $VAR_TAG"
+      - run: |
+          VERSION_TAG=$(git describe --tags --abbrev=0 || echo "no-tag")
+          echo "VERSION_TAG=$VERSION_TAG" >> $GITHUB_ENV
 
       - name: Build and Push Docker image
         run: |
