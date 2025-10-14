@@ -20,7 +20,8 @@ jobs:
 
       - name: Github tag version
         run: |
-          $(git describe --tags --abbrev=0)
+          VAR_TAG=$(git describe --tags --abbrev=0)
+          echo "Verion: $VAR_TAG"
 
       - name: Build and Push Docker image
         run: |
