@@ -23,7 +23,7 @@ jobs:
       - name: Github tag version
       - run: |
           VERSION_TAG=$(git describe --tags --abbrev=0 || echo "no-tag")
-          echo "VERSION_TAG=$VERSION_TAG" >> $GITHUB_ENV
+          echo "VERSION_TAG=$VERSION_TAG"
 
       - name: Build and Push Docker image
         run: |
