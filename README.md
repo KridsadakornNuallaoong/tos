@@ -29,7 +29,7 @@ TOS_LOG_BASENAME="<your_log_basename>"
 # Default set it = 'log'
 TOS_LOG_SUFFIX="<your_log_suffix>"
 
-# Set up your db now I use it with mgdb and we'll add other db in the futures.
+# Set up your db now I use it with mgdb and we'll add other db in the futures
 TOS_CON_MONGODB_PTC="<your_mongodb_protocol>"
 TOS_CON_MONGODB_USERNAME="<your_mongodb_username>"
 TOS_CON_MONGODB_PASSWORD="<your_mongodb_password>"

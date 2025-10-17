@@ -10,6 +10,9 @@ use flexi_logger::DeferredNow;
 use log::Record;
 use std::path::Path;
 
+use crate::dbmanager::insert_data;
+mod dbmanager;
+
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let env_path = Path::new("env/dev.env");
@@ -181,7 +184,7 @@ async fn main() -> anyhow::Result<()> {
                     continue;
                 }
 
-                println!("Received: {} => {}", &p.topic, &payload_json);
+                insert_data(&payload_json);
                 println!(
                     "Data received topic: \"{}\", FROM: {}, TYPE: {}",
                     &p.topic,
